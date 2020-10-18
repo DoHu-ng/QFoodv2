@@ -74,7 +74,8 @@
             android:id="@+id/imageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
+            android:layout_marginStart="25dp"
+            android:background="#fff"
             android:src="@drawable/ic_like"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"></ImageButton>
@@ -83,7 +84,8 @@
             android:id="@+id/imageButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="55dp"
+            android:background="#fff"
             android:src="@drawable/ic_drink"
             app:layout_constraintStart_toEndOf="@+id/imageButton"
             app:layout_constraintTop_toTopOf="parent"></ImageButton>
@@ -92,7 +94,8 @@
             android:id="@+id/imageButton3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="55dp"
+            android:background="#fff"
             android:src="@drawable/ic_baseline_fastfood_24"
             app:layout_constraintStart_toEndOf="@+id/imageButton2"
             app:layout_constraintTop_toTopOf="parent"></ImageButton>
@@ -101,7 +104,8 @@
             android:id="@+id/imageButton4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="55dp"
+            android:background="#fff"
             android:src="@drawable/ic_baseline_more_vert_24"
             app:layout_constraintStart_toEndOf="@+id/imageButton3"
             app:layout_constraintTop_toTopOf="parent"></ImageButton>
