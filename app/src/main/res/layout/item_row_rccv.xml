@@ -16,6 +16,6 @@
         android:text="ABC"
         android:textSize="40dp"
         android:id="@+id/txtFoodName"
-        android:textColor="@color/colorActionBar"
+        android:textColor="#000"
         android:layout_gravity="center"></TextView>
 </LinearLayout>

@@ -16,7 +16,7 @@ public class DrinkActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drink);
 
-        listView = (ListView)findViewById(R.id.listView);
+        listView = (ListView)findViewById(R.id.listView2);
         arrayList = Utils.getMockData(getApplicationContext());
         furnitureAdapter = new FoodAdapter(getApplicationContext(),arrayList);
         listView.setAdapter(furnitureAdapter);

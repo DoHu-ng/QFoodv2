@@ -29,4 +29,11 @@ public class Food implements Serializable {
         this.image = image;
     }
 
+    @Override
+    public String toString() {
+        return "Food{" +
+                "name='" + name + '\'' +
+                ", image=" + image +
+                '}';
+    }
 }

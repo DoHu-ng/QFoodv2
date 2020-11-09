@@ -11,9 +11,9 @@
         app:menu="@menu/bottom_menu_nav"
         android:layout_alignParentBottom="true"
         android:id="@+id/nav_view"
-        app:itemIconTint="@android:color/white"
-        app:itemTextColor="@android:color/white"
-        android:background="#CCFF4444"></com.google.android.material.bottomnavigation.BottomNavigationView>
+        app:itemIconTint="@android:color/black"
+        app:itemTextColor="@android:color/black"
+        android:background="@color/colorActionBar"></com.google.android.material.bottomnavigation.BottomNavigationView>
     <FrameLayout
         android:id="@+id/nav_host_fragment"
         android:layout_width="match_parent"

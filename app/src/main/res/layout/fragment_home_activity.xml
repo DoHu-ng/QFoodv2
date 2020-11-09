@@ -36,7 +36,7 @@
 
     <ImageButton
         android:id="@+id/imageButton5"
-        android:background="#000"
+        android:background="@color/colorText"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:src="@drawable/ic_baseline_arrow_forward_ios_24"
@@ -48,8 +48,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:layout_marginTop="50dp"
-        app:cardCornerRadius="8dp"
+        android:layout_marginTop="55dp"
+        app:cardCornerRadius="32dp"
         app:cardElevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,8 +58,9 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginTop="25dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorText"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -71,7 +72,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
-                android:background="#fff"
+                android:background="@color/colorText"
                 android:src="@drawable/ic_like"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"></ImageButton>
@@ -81,7 +82,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="55dp"
-                android:background="#fff"
+                android:background="@color/colorText"
                 android:src="@drawable/ic_drink"
                 app:layout_constraintStart_toEndOf="@+id/iBtnFavorite"
                 app:layout_constraintTop_toTopOf="parent"></ImageButton>
@@ -91,7 +92,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="55dp"
-                android:background="#fff"
+                android:background="@color/colorText"
                 android:src="@drawable/ic_baseline_fastfood_24"
                 app:layout_constraintStart_toEndOf="@+id/iBtnDrink"
                 app:layout_constraintTop_toTopOf="parent"></ImageButton>
@@ -101,7 +102,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="55dp"
-                android:background="#fff"
+                android:background="@color/colorText"
                 android:src="@drawable/ic_baseline_more_vert_24"
                 app:layout_constraintStart_toEndOf="@+id/iBtnFood"
                 app:layout_constraintTop_toTopOf="parent"></ImageButton>
@@ -161,14 +162,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:layout_marginTop="25dp"
-        app:cardCornerRadius="8dp"
+        app:cardCornerRadius="30dp"
         app:cardElevation="4dp"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText">
 
         <LinearLayout
+            android:background="@color/colorText"
             android:id="@+id/linearLayout"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
@@ -183,8 +185,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:text="Hello guy"
+
                 android:textColor="#000000"
                 android:textSize="30dp"
+
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="70dp"></TextView>
 
@@ -195,6 +199,7 @@
                 android:text="What do you want to eat, today?"
                 android:textColor="#000000"
                 android:textSize="15dp"
+                android:layout_marginLeft="@android:dimen/app_icon_size"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView1" />
         </LinearLayout>
@@ -206,16 +211,18 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:layout_marginTop="25dp"
-        app:cardCornerRadius="8dp"
+        app:cardCornerRadius="32dp"
         app:cardElevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView3">
 
         <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="25dp"
             android:id="@+id/recycler_view"
             android:layout_width="400dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"></androidx.recyclerview.widget.RecyclerView>
+            android:background="#fff"
+            ></androidx.recyclerview.widget.RecyclerView>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
