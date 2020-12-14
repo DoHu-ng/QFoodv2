@@ -7,7 +7,7 @@
     android:background="@color/colorText"
     tools:context=".SearchActivity">
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img_Logo_searchFrag"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:src="@drawable/logo"
@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edt_SearchBar_searchFrag"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:drawableLeft="@drawable/ic_baseline_search_24"
@@ -27,12 +27,12 @@
         android:inputType="textPersonName"
         android:paddingStart="16dp"
         android:singleLine="true"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/iBtn_Search"
+        app:layout_constraintStart_toEndOf="@+id/img_Logo_searchFrag"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/iBtn_Search"
         android:background="@color/colorText"
         android:layout_width="wrap_content"
         android:layout_height="50dp"

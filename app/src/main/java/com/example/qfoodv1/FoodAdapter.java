@@ -17,11 +17,13 @@ public class FoodAdapter extends ArrayAdapter<Food> {
 
     Context context;
     ArrayList<Food>arrayList;
+    int layoutresoure;
 
-    public FoodAdapter(@NonNull Context context, @NonNull ArrayList<Food> objects) {
-        super(context, 0, objects);
+    public FoodAdapter(Context context, int layoutresoure, ArrayList<Food> arrayList) {
+        super(context, layoutresoure, arrayList);
         this.context=context;
-        this.arrayList= objects;
+        this.layoutresoure=layoutresoure;
+        this.arrayList=arrayList;
     }
     @NonNull
     @Override
@@ -33,11 +35,12 @@ public class FoodAdapter extends ArrayAdapter<Food> {
         Food food = arrayList.get(position);
 
         TextView textView=convertView.findViewById(R.id.txtNameF);
+        TextView textView2=convertView.findViewById(R.id.txtDesF);
         ImageView imageView=convertView.findViewById(R.id.imageViewF);
 
         textView.setText(food.getName());
-
-        imageView.setImageBitmap(food.getImage());
+        textView2.setText(food.getDescription());
+        imageView.setImageBitmap(Utils.convertStringToBitmapFromAccess(getContext(), food.getImage()));
 
         return convertView;
     }

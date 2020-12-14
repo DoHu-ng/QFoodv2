@@ -41,7 +41,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/img_Location_cartFrag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_baseline_add_location_24"
@@ -49,6 +49,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
+            android:id="@+id/edt_Location_cartFrag"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -68,7 +69,7 @@
         android:layout_height="200dp">
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/txt_PriceD_cartFrag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -76,10 +77,10 @@
             android:textColor="#DAAB03"
             android:textSize="20sp"
             app:layout_constraintStart_toEndOf="@+id/imageView5"
-            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+            app:layout_constraintTop_toBottomOf="@+id/txt_Price_cartFrag" />
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/txt_Price_cartFrag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -88,11 +89,11 @@
             android:textColor="#000"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/imageView4"
-            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+            app:layout_constraintStart_toEndOf="@+id/img_ImgFood_cartFrag"
+            app:layout_constraintTop_toBottomOf="@+id/txt_NameFood_cartFrag" />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/txt_NameFood_cartFrag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -100,7 +101,7 @@
             android:textColor="#000"
             android:textSize="20sp"
             android:text="Name Food 1 "
-            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toEndOf="@+id/img_ImgFood_cartFrag"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -117,7 +118,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btn_AddFood_cartFrag"
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_marginTop="10dp"
@@ -129,7 +130,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/img_ImgFood_cartFrag"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginStart="10dp"
@@ -145,46 +146,27 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:src="@drawable/ic_baseline_attach_money_24"
-            app:layout_constraintStart_toEndOf="@+id/imageView4"
-            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+            app:layout_constraintStart_toEndOf="@+id/img_ImgFood_cartFrag"
+            app:layout_constraintTop_toBottomOf="@+id/txt_Price_cartFrag" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:text="+"
-            android:background="@drawable/mybtn"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/editText2" />
-
-        <EditText
-            android:id="@+id/editText2"
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="320dp"
-            android:hint="1"
+            app:backGroundColor="@color/colorAccent"
+            app:textColor="@color/colorPrimary"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"></EditText>
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:text="-"
-            android:background="@drawable/mybtn"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/editText2" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/iBtn_Delete_cartFrag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="20dp"
             android:background="#fff"
             android:src="@drawable/ic_baseline_delete_24"
-            app:layout_constraintStart_toEndOf="@+id/textView11"
-            app:layout_constraintTop_toBottomOf="@+id/button2" />
+            app:layout_constraintStart_toEndOf="@+id/txt_NameFood_cartFrag"
+            app:layout_constraintTop_toBottomOf="@+id/btn_AddFood_cartFrag" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -246,7 +228,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
         <TextView
-            android:id="@+id/textView18"
+            android:id="@+id/txt_Total_cartFrag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="56dp"
@@ -258,7 +240,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView19"
+            android:id="@+id/txt_FeeD_cartFrag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -267,10 +249,10 @@
             android:textColor="#000"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+            app:layout_constraintTop_toBottomOf="@+id/txt_Total_cartFrag" />
 
         <TextView
-            android:id="@+id/textView20"
+            android:id="@+id/txt_toPay_cartFrag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -280,10 +262,10 @@
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+            app:layout_constraintTop_toBottomOf="@+id/txt_FeeD_cartFrag" />
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/btn_buyBill_cartFrag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/mybtn"

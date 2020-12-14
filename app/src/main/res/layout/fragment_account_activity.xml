@@ -8,7 +8,7 @@
     tools:context=".AccountActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/img_Logo_infoFrag"
         android:layout_width="130dp"
         android:layout_height="100dp"
         android:layout_marginStart="50dp"
@@ -22,11 +22,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:text="Login"
+        android:text="Info"
         android:textColor="#364F6B"
         android:textSize="50sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/img_Logo_infoFrag" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="328dp"
@@ -46,7 +46,7 @@
             android:background="@color/colorBgr">
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/edt_PNumber_infoAc"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -60,37 +60,37 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:id="@+id/btnLogin"
+                android:id="@+id/btn_Recharge_infoAc"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/mybtn"
                 android:padding="18dp"
-                android:text="Login"
+                android:text="recharge your account"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+                app:layout_constraintTop_toBottomOf="@+id/edt_Password_infoAc" />
 
             <Button
-                android:id="@+id/btnRegister"
+                android:id="@+id/btn_logOut_infoAc"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/mybtn"
                 android:padding="18dp"
-                android:text="Register now"
+                android:text="Log out"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+                app:layout_constraintTop_toBottomOf="@+id/btn_Recharge_infoAc" />
 
             <EditText
-                android:id="@+id/editTextTextPassword"
+                android:id="@+id/edt_Password_infoAc"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -101,7 +101,7 @@
                 android:textColorHint="#fff"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+                app:layout_constraintTop_toBottomOf="@+id/edt_PNumber_infoAc" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 

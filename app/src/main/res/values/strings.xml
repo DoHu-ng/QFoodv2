@@ -3,4 +3,6 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="product_one">Name Food 1</string>
+    <string name="product_des_one">This is description of product one</string>
+    <string name="product_two">Name food 2</string>
 </resources>

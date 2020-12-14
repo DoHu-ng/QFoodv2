@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorActionBar"
-    tools:context=".InforActivity">
+    tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:text="Infor"
+        android:text="Login"
         android:textColor="#364F6B"
         android:textSize="50sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,28 +46,28 @@
             android:background="@color/colorBgr">
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/edt_PNumber_loginAc"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:drawableLeft="@drawable/ic_baseline_account_circle_24"
                 android:ems="10"
                 android:hint="Your phone number"
-                android:inputType="textPersonName"
+                android:inputType="number"
                 android:textColorHint="#fff"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <RadioGroup
-                android:id="@+id/radioGroup"
+                android:id="@+id/rdg_Gender_loginAc"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="15dp"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" >
+                app:layout_constraintTop_toBottomOf="@+id/edt_Password_loginAc" >
 
                 <RadioButton
                     android:id="@+id/radioButton2"
@@ -91,36 +91,36 @@
             </RadioGroup>
 
             <Button
-                android:id="@+id/btnLogin"
+                android:id="@+id/btn_Login_loginAc"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:background="@drawable/mybtn"
                 android:padding="18dp"
-                android:text="Let's go"
+                android:text="Login"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+                app:layout_constraintTop_toBottomOf="@+id/rdg_Gender_loginAc" />
 
             <Button
-                android:id="@+id/btnRegister"
+                android:id="@+id/btn_Register_loginAc"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/mybtn"
                 android:padding="18dp"
-                android:text="Skip this port"
+                android:text="Register Now"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+                app:layout_constraintTop_toBottomOf="@+id/btn_Login_loginAc" />
 
             <EditText
-                android:id="@+id/editTextTextPassword"
+                android:id="@+id/edt_Password_loginAc"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
@@ -131,7 +131,7 @@
                 android:textColorHint="#fff"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+                app:layout_constraintTop_toBottomOf="@+id/edt_PNumber_loginAc" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -141,4 +141,3 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

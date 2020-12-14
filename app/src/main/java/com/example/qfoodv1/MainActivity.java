@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     BottomNavigationView navView;
     boolean status=false;
     MenuItem menuItem;
+    DBHelper dbHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         loadFragment(new HomeActivity());
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         navView.setSelectedItemId(R.id.homeActivity);
+
+        //dbHelper.createTable();
     }
     private BottomNavigationView.OnNavigationItemSelectedListener
             mOnNavigationItemSelectedListener
